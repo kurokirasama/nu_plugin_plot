@@ -1,0 +1,11 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/nu_derive_value-c1275e2b6b815f10.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/attributes.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/case.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/error.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/from.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/into.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/names.rs
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libnu_derive_value-c1275e2b6b815f10.so: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/attributes.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/case.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/error.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/from.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/into.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/names.rs
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/lib.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/attributes.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/case.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/error.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/from.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/into.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-derive-value-0.108.0/src/names.rs:

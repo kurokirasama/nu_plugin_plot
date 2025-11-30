@@ -1,0 +1,10 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/nu_experimental-770c6565b085e1d8.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/mod.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/example.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/reorder_cell_paths.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/parse.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/util.rs
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libnu_experimental-770c6565b085e1d8.rmeta: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/mod.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/example.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/reorder_cell_paths.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/parse.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/util.rs
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/lib.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/mod.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/example.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/options/reorder_cell_paths.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/parse.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-experimental-0.106.0/src/util.rs:

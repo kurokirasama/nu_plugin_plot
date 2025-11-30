@@ -1,0 +1,11 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/nu_system-3b502a3a58b851b4.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/exit_status.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/foreground.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/util.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/linux.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/os_info.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/../README.md
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libnu_system-3b502a3a58b851b4.rmeta: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/exit_status.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/foreground.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/util.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/linux.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/os_info.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/../README.md
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/lib.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/exit_status.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/foreground.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/util.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/linux.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/os_info.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nu-system-0.109.0/src/../README.md:

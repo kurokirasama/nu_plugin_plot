@@ -1,0 +1,9 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/derive_more_impl-54a5002b8fa52c43.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libderive_more_impl-54a5002b8fa52c43.so: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/lib.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/utils.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/is_variant.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../README.md:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.0.1/src/../doc/is_variant.md:

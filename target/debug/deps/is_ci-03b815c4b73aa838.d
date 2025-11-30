@@ -1,0 +1,5 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/is_ci-03b815c4b73aa838.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/is_ci-1.2.0/src/lib.rs
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libis_ci-03b815c4b73aa838.rmeta: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/is_ci-1.2.0/src/lib.rs
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/is_ci-1.2.0/src/lib.rs:

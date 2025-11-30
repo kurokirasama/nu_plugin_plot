@@ -1,0 +1,16 @@
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/typetag-1ac9b48c56a041b4.d: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/adjacently.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/content.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/de.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/externally.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/internally.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/is_serialize_str.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/private.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/ser.rs /home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/build/typetag-8221e02cd096d7d2/out/private.rs
+
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/deps/libtypetag-1ac9b48c56a041b4.rmeta: /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/lib.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/adjacently.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/content.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/de.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/externally.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/internally.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/is_serialize_str.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/private.rs /home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/ser.rs /home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/build/typetag-8221e02cd096d7d2/out/private.rs
+
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/lib.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/adjacently.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/content.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/de.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/externally.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/internally.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/is_serialize_str.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/private.rs:
+/home/kira/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/typetag-0.2.21/src/ser.rs:
+/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/build/typetag-8221e02cd096d7d2/out/private.rs:
+
+# env-dep:OUT_DIR=/home/kira/Yandex.Disk/Development/linux/nushell/nu_plugin_plot/target/debug/build/typetag-8221e02cd096d7d2/out
