@@ -16,7 +16,7 @@ Update the existing conductor setup in `nu_plugin_plot` to fully integrate the `
 
 ### 1. Update Workflow (`conductor/workflow.md`)
 - [ ] Integrate **Nushell-First Guidelines**: Explicitly mandate the use of Nushell pipelines and the `evaluate` tool as the primary interaction method.
-- [ ] Integrate **Discord Notifications**: Add the protocol for long-running tasks (5min+) to send reports via `to discord`.
+- [ ] Integrate **Discord Notifications**: Add the protocol for long-running tasks (5min+) to send reports via `to-discord`.
 - [ ] Refine **Task Workflow**: Ensure the TDD (Red/Green/Refactor) and Commit/Note protocols are clearly stated and consistent with core protocols.
 - [ ] Standardize **Manual Verification**: Keep the structured verification plan format but ensure it aligns with Nushell usage.
 
