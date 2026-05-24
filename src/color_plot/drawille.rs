@@ -10,9 +10,7 @@
 //! # Example
 //!
 //! ```
-//! extern crate drawille;
-//!
-//! use drawille::Canvas;
+//! use nu_plugin_plot::color_plot::drawille::Canvas;
 //!
 //! fn main() {
 //!     let mut canvas = Canvas::new(10, 10);

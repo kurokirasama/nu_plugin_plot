@@ -19,7 +19,7 @@
 //! ```
 //!
 //! ```rust
-//! use textplots::{Chart, Plot, Shape};
+//! use nu_plugin_plot::color_plot::textplots::{Chart, Plot, Shape};
 //!
 //! println!("y = sin(x) / x");
 //!
@@ -36,7 +36,7 @@
 //! You can override the defaults calling `new`.
 //!
 //! ```rust
-//! use textplots::{Chart, Plot, Shape};
+//! use nu_plugin_plot::color_plot::textplots::{Chart, Plot, Shape};
 //!
 //! println!("y = cos(x), y = sin(x) / 2");
 //!

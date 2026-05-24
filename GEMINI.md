@@ -76,3 +76,7 @@ $data | plot
 *   `src/main.rs`: Binary entry point.
 *   `src/color_plot/`: Custom plotting implementation directory.
 *   `Cargo.toml`: Project configuration and dependencies.
+
+
+# Nushell Activation
+**ALWAYS** activate the `nushell-expert` skill before executing the first nushell command.

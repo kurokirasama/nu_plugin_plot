@@ -11,7 +11,7 @@ pub struct Scale {
 impl Scale {
     /// Translates value from domain to range scale.
     /// ```
-    /// # use textplots::scale::Scale;
+    /// # use nu_plugin_plot::color_plot::textplots::scale::Scale;
     /// assert_eq!(-0.8, Scale::new(0_f32..10_f32, -1_f32..1_f32).linear(1.0));
     /// ```
     pub fn linear(&self, x: f32) -> f32 {
@@ -22,7 +22,7 @@ impl Scale {
 
     /// Translates value from range to domain scale.
     /// ```
-    /// # use textplots::scale::Scale;
+    /// # use nu_plugin_plot::color_plot::textplots::scale::Scale;
     /// assert_eq!(5.5, Scale::new(0_f32..10_f32, -1_f32..1_f32).inv_linear(0.1));
     /// ```
     pub fn inv_linear(&self, i: f32) -> f32 {
