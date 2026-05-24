@@ -1,11 +1,11 @@
 # Tech Stack: nu_plugin_plot
 
 ## 1. Programming Language
-- **Rust (Edition 2021):** Used for its performance, safety, and modern toolchain.
+- **Rust (Edition 2021):** Minimum version 1.80.0+ required for Nushell 0.113.0 compatibility.
 
 ## 2. Frameworks and Core Libraries
-- **nu-plugin:** Provides the interface for creating Nushell plugins.
-- **nu-protocol:** Handles communication protocols and data types with the main Nushell process.
+- **nu-plugin (v0.113.0):** Provides the interface for creating Nushell plugins.
+- **nu-protocol (v0.113.0):** Handles communication protocols and data types with the main Nushell process.
 
 ## 3. Key Dependencies
 - **owo-colors:** For robust and easy terminal coloring of plots.

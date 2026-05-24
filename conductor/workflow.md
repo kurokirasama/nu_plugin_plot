@@ -8,6 +8,7 @@
 4. **High Code Coverage:** Aim for >80% code coverage for all modules
 5. **User Experience First:** Every decision should prioritize user experience
 6. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
+7. **Nushell-First Discord Notifications:** Whenever using `to-discord`, it MUST be executed via the `evaluate` tool as it is a custom Nushell command. Do NOT use `run_shell_command` for Discord notifications.
 
 ## Task Workflow
 
@@ -351,3 +352,7 @@ A task is complete when:
     - Assess the repository state to determine the best push strategy.
     - In case of complex conflicts or rebase scenarios, consult the user before proceeding.
 4. **Finality:** The archiving process is only complete when the push is confirmed and the repository is verified as clean.
+
+
+# Nushell Activation
+**ALWAYS** activate the `nushell-expert` skill before executing the first nushell command.
