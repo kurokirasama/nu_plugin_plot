@@ -1,3 +1,4 @@
-# Project Tracks
+---
 
-This file tracks all major tracks for the project. Each track has its own detailed plan in its respective folder.
+- [ ] **Track: Weather Plugin Bug Fix (Type Conversion & Crash)**
+*Link: [./tracks/weather_fix_20260524/](./tracks/weather_fix_20260524/)*
