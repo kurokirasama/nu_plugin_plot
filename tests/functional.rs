@@ -61,3 +61,20 @@ fn test_xyplot_command() -> Result<(), Box<dyn std::error::Error>> {
     assert!(value.as_str()?.contains("    ")); // TAB indentation
     Ok(())
 }
+
+#[test]
+fn test_plot_nested_empty_list_does_not_panic() -> Result<(), Box<dyn std::error::Error>> {
+    let mut test = PluginTest::new("plot", Arc::new(PluginPlot {}))?;
+
+    let input = Value::list(
+        vec![Value::list(vec![], Span::test_data())],
+        Span::test_data(),
+    );
+
+    let output = test.eval_with("plot", input.into_pipeline_data());
+    
+    // It should gracefully return an error, not panic
+    assert!(output.is_err());
+    
+    Ok(())
+}

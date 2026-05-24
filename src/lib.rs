@@ -192,7 +192,11 @@ fn check_equality_of_list(
         );
     }
 
-    if let Some(_len) = first_len_op {
+    if let Some(len) = first_len_op {
+        if *len == 0 {
+            return Err(LabeledError::new("Nested list cannot be empty.")
+                .with_label("Empty nested list.", call.head));
+        }
         // *should* always index + unwrap without panicking...
         let inner_type = l[0].as_list()?[0].get_type();
         match inner_type {
