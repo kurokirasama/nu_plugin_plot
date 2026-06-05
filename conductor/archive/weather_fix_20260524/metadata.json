@@ -1,8 +1,0 @@
-{
-  "track_id": "weather_fix_20260524",
-  "type": "bug",
-  "status": "new",
-  "created_at": "2026-05-24T04:36:31Z",
-  "updated_at": "2026-05-24T04:36:31Z",
-  "description": "Fix type conversion error and core dump in weather command using the plugin."
-}
