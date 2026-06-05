@@ -14,10 +14,10 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Dependency Upgrade & Audit' (Protocol in workflow.md) [7620b78]
 
 ## Phase 2: Local Integration Testing & Verification
-- [ ] Task: Local registration
-    - [ ] Build release version: `cargo build --release`
-    - [ ] Add the plugin to Nushell: `plugin add ./target/release/nu_plugin_plot`
-    - [ ] Enable the plugin: `plugin use plot`
+- [x] Task: Local registration [2c89b5a]
+    - [x] Build release version: `cargo build --release`
+    - [x] Add the plugin to Nushell: `plugin add ./target/release/nu_plugin_plot`
+    - [x] Enable the plugin: `plugin use plot`
 - [ ] Task: Interactive test verification
     - [ ] Run test plotting command to verify output: `seq 0 0.1 10 | math sin | plot`
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Local Integration Testing & Verification' (Protocol in workflow.md)
