@@ -1,6 +1,6 @@
 # Implementation Plan: Bump Nushell and App version to 0.113.1
 
-## Phase 1: Dependency Upgrade & Audit
+## Phase 1: Dependency Upgrade & Audit [checkpoint: 7620b78]
 - [x] Task: Update dependencies and crate version in Cargo.toml [379cff0]
     - [x] Update package version to `0.113.1`
     - [x] Update `nu-plugin` dependency to `0.113.1`
@@ -11,7 +11,7 @@
     - [x] Fix any compile/API errors arising from Nushell 0.113.1 SDK changes
 - [x] Task: Verify test suite [bc1f1d7]
     - [x] Run `cargo test` to verify existing tests pass
-- [~] Task: Conductor - User Manual Verification 'Phase 1: Dependency Upgrade & Audit' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Dependency Upgrade & Audit' (Protocol in workflow.md) [7620b78]
 
 ## Phase 2: Local Integration Testing & Verification
 - [ ] Task: Local registration
