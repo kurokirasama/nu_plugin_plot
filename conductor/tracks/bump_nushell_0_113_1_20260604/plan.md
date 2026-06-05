@@ -6,9 +6,9 @@
     - [x] Update `nu-plugin` dependency to `0.113.1`
     - [x] Update `nu-protocol` dependency to `0.113.1`
     - [x] Update `nu-plugin-test-support` dev-dependency to `0.113.1`
-- [ ] Task: SDK-First Compilation Audit
-    - [ ] Run `cargo build` to audit compilation
-    - [ ] Fix any compile/API errors arising from Nushell 0.113.1 SDK changes
+- [x] Task: SDK-First Compilation Audit [feca05c]
+    - [x] Run `cargo build` to audit compilation
+    - [x] Fix any compile/API errors arising from Nushell 0.113.1 SDK changes
 - [ ] Task: Verify test suite
     - [ ] Run `cargo test` to verify existing tests pass
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Dependency Upgrade & Audit' (Protocol in workflow.md)
