@@ -9,8 +9,8 @@
 - [x] Task: SDK-First Compilation Audit [feca05c]
     - [x] Run `cargo build` to audit compilation
     - [x] Fix any compile/API errors arising from Nushell 0.113.1 SDK changes
-- [ ] Task: Verify test suite
-    - [ ] Run `cargo test` to verify existing tests pass
+- [x] Task: Verify test suite [bc1f1d7]
+    - [x] Run `cargo test` to verify existing tests pass
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Dependency Upgrade & Audit' (Protocol in workflow.md)
 
 ## Phase 2: Local Integration Testing & Verification
