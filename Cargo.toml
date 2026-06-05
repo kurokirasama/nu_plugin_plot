@@ -15,3 +15,4 @@ term_size = "0.3.2"
 
 [dev-dependencies]
 nu-plugin-test-support = "0.113.1"
+nu-plugin-engine = { version = "0.113.1", features = ["local-socket"] }
