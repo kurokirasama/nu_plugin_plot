@@ -1,5 +1,37 @@
 # Project Workflow
 
+### Mandatory Protocols
+
+#### Nushell-First Guidelines
+Priority must be given to using Nushell pipelines and the `evaluate` tool for all system interactions and data manipulation tasks. **ALWAYS** activate the `nushell-expert` skill before executing the first nushell command you intend to use in the corresponding session.
+
+#### Status Reporting & Notifications
+
+##### Standard Task Summary
+After every successful task completion, provide a very brief summary in English of what was done and how.
+- **Tone:** Conceptual description, including technical details only where appropriate for clarity.
+- **Exception:** Do NOT provide a summary for trivial tasks unless explicitly requested.
+
+##### Mandatory Discord Notification for User Input (CRITICAL)
+Whenever you are about to use the `ask_user` tool to request feedback, clarification, or approval, you **MUST** first send a Discord notification. This ensures the user is alerted that the agent is blocked and waiting for input.
+
+- **Command**: Execute the `mcp_standard-nushell_evaluate` tool with `to-discord $message -p`.
+- **Nushell Command**: `to-discord` is a Nushell command.
+- **Nushell Activation**: **ALWAYS** activate the `nushell-expert` skill before executing the first nushell command.
+- **Fallback Mechanism**: If the `evaluate` tool is unavailable or fails, use the following syntax to ensure local config/env are loaded:
+  `nu --config /home/kira/.config/nushell/config.nu --env-config /home/kira/.config/nushell/env.nu -c 'to-discord "<message>" -p'`
+- **Timing**: Send the notification **immediately before** calling `ask_user`.
+
+##### Discord Notification for Long Tasks (5min+)
+If a task takes 5 minutes or more, you **MUST** perform these steps before proceeding or asking for input:
+1.  **Draft Report (English)**: Create a concise conceptual and technical summary, immediate next steps, and status (waiting for user or continuing automatically).
+2.  **Send via Discord**: Execute the `mcp_standard-nushell_evaluate` tool with `to-discord $message -p`.
+3.  **Sequence Priority**: If the next step involves `ask_user`, follow the "Mandatory Discord Notification for User Input" protocol above.
+
+#### Track Management
+- **Cleanup & Synchronization**: Once a track is archived or deleted, the agent **MUST** activate the `git-sync` skill to ensure the local repository is fully synchronized (pull/push loop) with the remote origin.
+- **Session Retrospective**: The `session-retro` skill MUST be executed when done if an issue was encountered that is new (compared against obsidian memory), required significant effort, or was interesting/unique.
+
 ## Guiding Principles
 
 1. **The Plan is the Source of Truth:** All work must be tracked in `plan.md`
