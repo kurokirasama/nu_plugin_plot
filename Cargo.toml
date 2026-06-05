@@ -5,13 +5,13 @@ repository = "https://github.com/euphrasiologist/nu_plugin_plot"
 edition = "2021"
 license = "MIT"
 name = "nu_plugin_plot"
-version = "0.111.0"
+version = "0.113.1"
 [dependencies]
-nu-plugin = "0.113.0"
-nu-protocol = { version = "0.113.0", features = ["plugin"] }
+nu-plugin = "0.113.1"
+nu-protocol = { version = "0.113.1", features = ["plugin"] }
 owo-colors = "3.5.0"
 fnv = "1.0.7"
 term_size = "0.3.2"
 
 [dev-dependencies]
-nu-plugin-test-support = "0.113.0"
+nu-plugin-test-support = "0.113.1"
