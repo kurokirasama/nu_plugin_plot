@@ -1,0 +1,5 @@
+Task: Update dependencies and crate version in Cargo.toml
+
+Summary of changes: Bumped package version and dependencies nu-plugin, nu-protocol, and nu-plugin-test-support to 0.113.1 in Cargo.toml.
+Modified files: Cargo.toml
+Why: To synchronize plugin with Nushell version 0.113.1.
