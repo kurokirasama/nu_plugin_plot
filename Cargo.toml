@@ -15,4 +15,7 @@ term_size = "0.3.2"
 
 [dev-dependencies]
 nu-plugin-test-support = "0.113.1"
+# Required to unify the `local-socket` feature flag across the dependency graph.
+# Without this, `cargo test` fails with E0004 on `ServerCommunicationIo::LocalSocket`
+# inside nu-plugin-engine (Nushell 0.113.1 compatibility).
 nu-plugin-engine = { version = "0.113.1", features = ["local-socket"] }
