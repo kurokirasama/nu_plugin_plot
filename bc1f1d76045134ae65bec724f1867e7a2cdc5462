@@ -1,0 +1,5 @@
+Task: Verify test suite
+
+Summary of changes: Added nu-plugin-engine dev-dependency with local-socket feature enabled in Cargo.toml to resolve E0004 compilation failure during cargo test. Executed cargo test successfully; all 4 integration tests and 6 doc-tests passed.
+Modified files: Cargo.toml, Cargo.lock
+Why: To resolve Cargo feature unification error and ensure test suite passes with Nushell 0.113.1.
