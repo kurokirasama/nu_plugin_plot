@@ -1,11 +1,11 @@
 # Implementation Plan: Bump Nushell and App version to 0.113.1
 
 ## Phase 1: Dependency Upgrade & Audit
-- [ ] Task: Update dependencies and crate version in Cargo.toml
-    - [ ] Update package version to `0.113.1`
-    - [ ] Update `nu-plugin` dependency to `0.113.1`
-    - [ ] Update `nu-protocol` dependency to `0.113.1`
-    - [ ] Update `nu-plugin-test-support` dev-dependency to `0.113.1`
+- [x] Task: Update dependencies and crate version in Cargo.toml [379cff0]
+    - [x] Update package version to `0.113.1`
+    - [x] Update `nu-plugin` dependency to `0.113.1`
+    - [x] Update `nu-protocol` dependency to `0.113.1`
+    - [x] Update `nu-plugin-test-support` dev-dependency to `0.113.1`
 - [ ] Task: SDK-First Compilation Audit
     - [ ] Run `cargo build` to audit compilation
     - [ ] Fix any compile/API errors arising from Nushell 0.113.1 SDK changes
