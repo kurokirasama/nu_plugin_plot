@@ -21,3 +21,9 @@
 - [x] Task: Interactive test verification [1a2592b]
     - [x] Run test plotting command to verify output: `seq 0 0.1 10 | math sin | plot`
 - [x] Task: Conductor - User Manual Verification 'Phase 2: Local Integration Testing & Verification' (Protocol in workflow.md) [9eb2b05]
+
+## Phase: Review Fixes
+- [x] Task: Apply review suggestions [169f10e]
+    - [x] Add explanatory comment for `nu-plugin-engine` dev-dependency workaround in `Cargo.toml`
+    - [x] Commit `GEMINI.md` and `conductor/workflow.md` to `private` branch [fbe99ac]
+
