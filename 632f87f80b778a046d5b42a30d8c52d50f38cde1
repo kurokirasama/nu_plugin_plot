@@ -1,0 +1,11 @@
+Task: Update dependency versions in Cargo.toml
+Summary: Updated all Nushell dependencies from 0.113.1 to 0.114.0
+Files modified: Cargo.toml, Cargo.lock
+Changes:
+  - nu-plugin: 0.113.1 -> 0.114.0
+  - nu-protocol: 0.113.1 -> 0.114.0
+  - nu-plugin-test-support: 0.113.1 -> 0.114.0
+  - nu-plugin-engine: 0.113.1 -> 0.114.0
+  - package version: 0.113.1 -> 0.114.0
+Build: SUCCESS - cargo build --release passed
+Tests: PASSED - 4/4 functional tests, 6/6 doc-tests
