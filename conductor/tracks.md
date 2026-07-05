@@ -2,7 +2,6 @@
 
 This file tracks all major tracks for the project. Each track has its own detailed plan in its respective folder.
 
----
 
-- [x] **Track: Update Nushell dependencies to version 0.114.0**
-*Link: [conductor/tracks/update_nushell_20260705/](./conductor/tracks/update_nushell_20260705/)*.
+
+.
