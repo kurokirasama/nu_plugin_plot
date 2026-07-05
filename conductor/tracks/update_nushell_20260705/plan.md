@@ -6,7 +6,7 @@
     - [x] Update `nu-protocol` to 0.114.0
     - [x] Update `nu-plugin-test-support` to 0.114.0
     - [x] Update `nu-plugin-engine` to 0.114.0
-- [ ] Task: Conductor - User Manual Verification 'Dependency Update' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Dependency Update' (Protocol in workflow.md)
 
 ## Phase 2: Compilation and Basic Testing
 - [ ] Task: Compile the plugin with updated dependencies
