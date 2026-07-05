@@ -1,12 +1,12 @@
 # Implementation Plan: Update Nushell dependencies to version 0.114.0
 
-## Phase 1: Dependency Update
+## Phase 1: Dependency Update [checkpoint: e518071]
 - [x] Task: Update dependency versions in Cargo.toml [632f87f]
     - [x] Update `nu-plugin` to 0.114.0
     - [x] Update `nu-protocol` to 0.114.0
     - [x] Update `nu-plugin-test-support` to 0.114.0
     - [x] Update `nu-plugin-engine` to 0.114.0
-- [~] Task: Conductor - User Manual Verification 'Dependency Update' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Dependency Update' (Protocol in workflow.md)
 
 ## Phase 2: Compilation and Basic Testing
 - [ ] Task: Compile the plugin with updated dependencies
