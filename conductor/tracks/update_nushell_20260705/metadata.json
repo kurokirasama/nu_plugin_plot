@@ -1,0 +1,8 @@
+{
+  "track_id": "update_nushell_20260705",
+  "type": "chore",
+  "status": "new",
+  "created_at": "2026-07-05T06:03:00Z",
+  "updated_at": "2026-07-05T06:03:00Z",
+  "description": "Update Nushell dependencies to version 0.114.0"
+}
