@@ -1,0 +1,9 @@
+Task: Update documentation
+Summary: Updated tech-stack.md with Nushell 0.114.0 versions
+Files modified: conductor/tech-stack.md
+Changes:
+  - Rust compatibility: 0.113.1 -> 0.114.0
+  - nu-plugin: 0.113.1 -> 0.114.0
+  - nu-protocol: 0.113.1 -> 0.114.0
+  - nu-plugin-engine: 0.113.1 -> 0.114.0
+README: No changes needed (version-agnostic)
