@@ -18,8 +18,8 @@
 - [x] Task: Conductor - User Manual Verification 'Compilation and Basic Testing' (Protocol in workflow.md)
 
 ## Phase 3: Integration Testing
-- [ ] Task: Test plugin registration with Nushell
-    - [ ] Register the plugin with Nushell 0.114.0
+- [~] Task: Test plugin registration with Nushell
+    - [~] Register the plugin with Nushell 0.114.0
     - [ ] Verify plugin appears in `plugin list`
 - [ ] Task: Test basic plotting functionality
     - [ ] Test line plots with sample data
@@ -35,4 +35,4 @@
 - [ ] Task: Update documentation if needed
     - [ ] Update README if any changes affect installation
     - [ ] Update tech stack documentation
-- [ ] Task: Conductor - User Manual Verification 'Final Verification' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Final Verification' (Protocol in workflow.md)
