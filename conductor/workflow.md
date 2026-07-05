@@ -13,7 +13,32 @@ After every successful task completion, provide a very brief summary in English 
 - **Exception:** Do NOT provide a summary for trivial tasks unless explicitly requested.
 
 ##### Mandatory Discord Notification for User Input (CRITICAL)
-Whenever you are about to use the `ask_user` tool to request feedback, clarification, or approval, you **MUST** first send a Discord notification. This ensures the user is alerted that the agent is blocked and waiting for input.
+Whenever you are about to use the `ask_user` (or equivalent) tool to request feedback, clarification, or approval, you **MUST** first send a Discord notification. This ensures the user is alerted that the agent is blocked and waiting for input.
+
+**CRITICAL:** ALWAYS execute `to-discord` nushell command and WAIT for it to finish BEFORE executing the `ask_user` tool. This sequential ordering is mandatory to ensure the user is notified that the agent is blocked and waiting.
+
+- **Notification Content**:
+    - **Exact Question**: Include the literal question(s) being that will be asked via `ask_user` (or equivalent).
+    - **Task Metadata**: State the current Track ID, Phase Name, and Task Description.
+    - **Context for Review/Opinion**: If asking for a review or opinion on changes:
+        - List the modified files.
+        - Provide a high-level conceptual summary of the changes.
+        - Include a simplified `git diff` (markdown code block ````diff````) focusing on relevant logic.
+        - **Visibility Mandate**: The exact same information sent to Discord (question, metadata, context) MUST also be explicitly included in the `ask_user` call (or equivalent) so it is visible to the user in the chat interface.
+        - **Diff Management**: If the diff or total message exceeds 2000 characters, split it into several messages.
+
+- **Command**: Execute the nushell `evaluate` tool with `to-discord $message -p`.
+- **Notification Content**:
+    - **Exact Question**: Include the literal question(s) being that will be asked via `ask_user` (or equivalent).
+    - **Task Metadata**: State the current Track ID, Phase Name, and Task Description.
+    - **Context for Review/Opinion**: If asking for a review or opinion on changes:
+        - List the modified files.
+        - Provide a high-level conceptual summary of the changes.
+        - Include a simplified `git diff` (markdown code block ````diff````) focusing on relevant logic.
+        - **Visibility Mandate**: The exact same information sent to Discord (question, metadata, context) MUST also be explicitly included in the `ask_user` call (or equivalent) so it is visible to the user in the chat interface.
+        - **Diff Management**: If the diff or total message exceeds 2000 characters, split it into several messages.
+
+- **Command**: Execute the nushell `evaluate` tool with `to-discord $message -p`.
 
 - **Command**: Execute the `mcp_standard-nushell_evaluate` tool with `to-discord $message -p`.
 - **Nushell Command**: `to-discord` is a Nushell command.
@@ -21,6 +46,7 @@ Whenever you are about to use the `ask_user` tool to request feedback, clarifica
 - **Fallback Mechanism**: If the `evaluate` tool is unavailable or fails, use the following syntax to ensure local config/env are loaded:
   `nu --config /home/kira/.config/nushell/config.nu --env-config /home/kira/.config/nushell/env.nu -c 'to-discord "<message>" -p'`
 - **Timing**: Send the notification **immediately before** calling `ask_user`.
+- **`ask_user` Fallback**: If the `ask_user` tool is unavailable or not accessible in the current environment, ask the user directly by outputting your question as plain text in the chat interface.
 
 ##### Discord Notification for Long Tasks (5min+)
 If a task takes 5 minutes or more, you **MUST** perform these steps before proceeding or asking for input:
@@ -29,7 +55,7 @@ If a task takes 5 minutes or more, you **MUST** perform these steps before proce
 3.  **Sequence Priority**: If the next step involves `ask_user`, follow the "Mandatory Discord Notification for User Input" protocol above.
 
 #### Track Management
-- **Cleanup & Synchronization**: Once a track is archived or deleted, the agent **MUST** activate the `git-sync` skill to ensure the local repository is fully synchronized (pull/push loop) with the remote origin.
+- **Cleanup & Synchronization**: Once a track is archived or deleted, the agent **MUST** activate the `git-sync` skill to ensure the local repository is fully synchronized (pull/push loop) with the remote origin. This is a non-optional MUST to ensure the remote origin is synchronized immediately after cleanup operations.
 - **Session Retrospective**: The `session-retro` skill MUST be executed when done if an issue was encountered that is new (compared against obsidian memory), required significant effort, or was interesting/unique.
 
 ## Guiding Principles
@@ -37,10 +63,10 @@ If a task takes 5 minutes or more, you **MUST** perform these steps before proce
 1. **The Plan is the Source of Truth:** All work must be tracked in `plan.md`
 2. **The Tech Stack is Deliberate:** Changes to the tech stack must be documented in `tech-stack.md` *before* implementation
 3. **Test-Driven Development:** Write unit tests before implementing functionality
-4. **High Code Coverage:** Aim for >80% code coverage for all modules
-5. **User Experience First:** Every decision should prioritize user experience
-6. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
-7. **Nushell-First Discord Notifications:** Whenever using `to-discord`, it MUST be executed via the `evaluate` tool as it is a custom Nushell command. Do NOT use `run_shell_command` for Discord notifications.
+5. **High Code Coverage:** Aim for >80% code coverage for all modules
+6. **User Experience First:** Every decision should prioritize user experience
+7. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
+16. **Nushell-First Discord Notifications:** Whenever using `to-discord`, it MUST be executed via the `evaluate` tool as it is a custom Nushell command. Do NOT use `run_shell_command` for Discord notifications.
 
 ## Task Workflow
 
@@ -52,7 +78,9 @@ All tasks follow a strict lifecycle:
 
 2. **Mark In Progress:** Before beginning work, edit `plan.md` and change the task from `[ ]` to `[~]`
 
-3. **Context Retrieval & Alignment (Track Initiation):**
+3. **Consult howto.md:** Read the relevant section of the track's `howto.md` for per-task implementation guidance (code snippets, patterns, pitfalls, verification commands). The agent MAY update `howto.md` during implementation if better approaches are discovered.
+
+8. **Context Retrieval & Alignment (Track Initiation):**
    - Perform an exhaustive search in all memories (Obsidian `obsidian_global_search` and Knowledge Graph `search_nodes`).
    - Use broad search terms related to the track's technology (e.g., "rust", "nushell").
    - Proactively internalize identified standards (coding styles, naming conventions, architectural patterns).
@@ -77,31 +105,31 @@ All tasks follow a strict lifecycle:
    ```
    Target: >80% coverage for new code. The specific tools and commands will vary by language and framework.
 
-8. **Document Deviations:** If implementation differs from tech stack:
+9. **Document Deviations:** If implementation differs from tech stack:
    - **STOP** implementation
    - Update `tech-stack.md` with new design
    - Add dated note explaining the change
    - Resume implementation
 
-9. **Commit Code Changes:**
+11. **Commit Code Changes:**
    - Stage all code changes related to the task.
    - Propose a clear, concise commit message e.g, `feat(ui): Create basic HTML structure for calculator`.
    - Perform the commit.
 
 10. **Attach Task Summary with Git Notes:**
-    - **Step 10.1: Get Commit Hash:** Obtain the hash of the *just-completed commit* (`git log -1 --format="%H"`).
-    - **Step 10.2: Draft Note Content:** Create a detailed summary for the completed task. This should include the task name, a summary of changes, a list of all created/modified files, and the core "why" for the change.
+    - **Step 11.1: Get Commit Hash:** Obtain the hash of the *just-completed commit* (`git log -1 --format="%H"`).
+    - **Step 11.2: Draft Note Content:** Create a detailed summary for the completed task. This should include the task name, a summary of changes, a list of all created/modified files, and the core "why" for the change.
     - **Step 10.3: Attach Note:** Use the `git notes` command to attach the summary to the commit.
       ```bash
       # The note content from the previous step is passed via the -m flag.
       git notes add -m "<note content>" <commit_hash>
       ```
 
-11. **Get and Record Task Commit SHA:**
+12. **Get and Record Task Commit SHA:**
     - **Step 11.1: Update Plan:** Read `plan.md`, find the line for the completed task, update its status from `[~]` to `[x]`, and append the first 7 characters of the *just-completed commit's* commit hash.
     - **Step 11.2: Write Plan:** Write the updated content back to `plan.md`.
 
-12. **Commit Plan Update:**
+13. **Commit Plan Update:**
     - **Action:** Stage the modified `plan.md` file.
     - **Action:** Commit this change with a descriptive message (e.g., `conductor(plan): Mark task 'Create user model' as complete`).
 
@@ -388,3 +416,17 @@ A task is complete when:
 
 # Nushell Activation
 **ALWAYS** activate the `nushell-expert` skill before executing the first nushell command.
+
+## Track Cleanup and Synchronization
+
+Once a track is archived or deleted, the agent **MUST** activate the `git-sync` skill to ensure the local repository is fully synchronized (pull/push loop) with the remote origin. This is a non-optional MUST to ensure the remote origin is synchronized immediately after cleanup operations.
+
+### Track Archival Memory Update Protocol (longterm-memory)
+
+**CRITICAL:** After archiving or completing a track, the agent MUST follow this ordered protocol:
+1. Execute `git-sync` to synchronize the remote origin
+2. Activate `longterm-memory-orchestrator` skill
+3. Follow the orchestrator's guidance to activate `longterm-memory-writer`
+4. Use `longterm-memory-writer`'s `write-trajectory-log` function to persist a trajectory log of the session
+
+This ensures that track completion, key decisions, outcomes, lessons learned, and the session trajectory are recorded in the project's episodic memory.

@@ -81,6 +81,29 @@ $data | plot
 # Nushell Activation
 **ALWAYS** activate the `nushell-expert` skill before executing the first nushell command.
 
+# Longterm Memory System
+
+The Longterm Memory System is a multi-tiered architecture designed to provide LLM agents with persistent context across sessions. It consists of:
+- **Episodic Memory**: Project-specific logs stored in `AGENTS_MEMORY/nu_plugin_plot/` in the Obsidian vault. The `[project-slug]` MUST be the same name as the project folder (e.g., for `/home/kira/Yandex.Disk/llms_configs`, use `AGENTS_MEMORY/llms_configs/`). These logs contain dated entries of decisions, milestones, and task summaries.
+- **Semantic & Identity Memory**: Global files (`BRAIN.md` and `SOUL.md`) that store high-level facts, active project summaries, and the agent's core identity and personality within `AGENTS_MEMORY/` in the Obsidian vault.
+- **Orchestration**: A coordination layer (`longterm-memory-orchestrator`) that defines the system objectives and triggers specialized sub-skills for reading and writing.
+
+**MANDATORY PRE-TASK PROTOCOL:** At the beginning of every session, BEFORE proceeding with any user tasks, the agent MUST load project context and global awareness. Follow the instructions in the `longterm-memory-reader` skill (invoking `init-session`) and internalize the contents of `BRAIN.md` and `SOUL.md`. This ensures continuity of identity and high-level project awareness.
+
+## Skill Quick Reference
+- `longterm-memory-orchestrator`: High-level orchestrator that defines system objectives and activation triggers for specialized sub-skills.
+- `longterm-memory-reader`: Handles all memory retrieval, searching, and parsing operations, including session initialization and consolidation data gathering.
+- `longterm-memory-writer`: Handles all memory persistence and setup operations, including manual updates, note initialization, and global context updates.
+- `conductor-core-protocols`: Defines mandatory operational guidelines, including Nushell-first usage, mandatory pre-task memory retrieval, and Discord notification sequencing.
+- `cron-conductor-monitor`: Autonomously monitors Conductor projects for pending work and high-level project state, outputting structured status summaries.
+- `initialize-conductor`: Standardizes the setup and update of Conductor framework guidelines and project-specific documentation tracks.
+- `initialize-course`: Automates and standardizes the setup of Conductor-managed workspaces for university course repositories.
+- `initialize-research`: Scaffolds LaTeX-based research projects, including reports and articles, from predefined project templates.
+- `initialize-thesis-folder`: Specialized initializer for UBB Statistics Engineering thesis projects, integrating Audit & Guide workflows.
+- `session-retro`: Analyzes session transcripts to identify new issues and key insights, generating retrospective notes with two-way memory linking.
+- `obsidian-memory-expert`: Expert for managing long-term memory via the Obsidian CLI, specializing in retrieving insights and project-specific metadata.
+
+
 # context-mode — MANDATORY routing rules
 
 You have context-mode MCP tools available. These rules are NOT optional — they protect your context window from flooding. A single unrouted command can dump 56 KB into context and waste the entire session.
@@ -138,3 +161,26 @@ Search results can flood context. Use `mcp__context-mode__ctx_execute(language: 
 |---------|--------|
 | `ctx stats` | Call the `stats` MCP tool and display the full output verbatim |
 | `ctx doctor` | Call the `doctor` MCP tool, run the returned shell command, display as checklist |
+
+# Track Cleanup and Synchronization
+Once a track is archived or deleted, the agent **MUST** activate the `git-sync` skill to ensure the local repository is fully synchronized (pull/push loop) with the remote origin. This is a non-optional MUST to ensure the remote origin is synchronized immediately after cleanup operations.
+
+
+# Output feedback and Discord notifications
+
+## Mandatory Discord Notification for User Input (CRITICAL)
+Whenever you are about to use the `ask_user` (or equivalent) tool to request feedback, clarification, or approval, you **MUST** first send a Discord notification. This ensures the user is alerted that the agent is blocked and waiting for input.
+
+**CRITICAL:** ALWAYS execute `to-discord` nushell command and WAIT for it to finish BEFORE executing the `ask_user` tool. This sequential ordering is mandatory to ensure the user is notified that the agent is blocked and waiting.
+
+- **Notification Content**:
+    - **Exact Question**: Include the literal question(s) being that will be asked via `ask_user` (or equivalent).
+    - **Task Metadata**: State the current Track ID, Phase Name, and Task Description.
+    - **Context for Review/Opinion**: If asking for a review or opinion on changes:
+        - List the modified files.
+        - Provide a high-level conceptual summary of the changes.
+        - Include a simplified `git diff` (markdown code block ````diff````) focusing on relevant logic.
+        - **Visibility Mandate**: The exact same information sent to Discord (question, metadata, context) MUST also be explicitly included in the `ask_user` call (or equivalent) so it is visible to the user in the chat interface.
+        - **Diff Management**: If the diff or total message exceeds 2000 characters, split it into several messages.
+
+- **Command**: Execute the nushell `evaluate` tool with `to-discord $message -p`.
