@@ -62,11 +62,12 @@ If a task takes 5 minutes or more, you **MUST** perform these steps before proce
 
 1. **The Plan is the Source of Truth:** All work must be tracked in `plan.md`
 2. **The Tech Stack is Deliberate:** Changes to the tech stack must be documented in `tech-stack.md` *before* implementation
-3. **Test-Driven Development:** Write unit tests before implementing functionality
+3. **Test-Driven Development (TDD):** Write unit tests before implementing functionality
+4. **BDD / Gherkin Acceptance Scenarios:** Define functional specifications using `Given-When-Then` scenarios in `spec.md`
 5. **High Code Coverage:** Aim for >80% code coverage for all modules
-6. **User Experience First:** Every decision should prioritize user experience
-7. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
-16. **Nushell-First Discord Notifications:** Whenever using `to-discord`, it MUST be executed via the `evaluate` tool as it is a custom Nushell command. Do NOT use `run_shell_command` for Discord notifications.
+6. **Mutation Testing:** Use mutation testing (e.g., mutmut, Stryker, cargo-mutants) to verify test assertion quality, targeting a `>70%` Mutation Score on new/modified code.
+7. **User Experience First:** Every decision should prioritize user experience
+8. **Non-Interactive & CI-Aware:** Prefer non-interactive commands. Use `CI=true` for watch-mode tools (tests, linters) to ensure single execution.
 
 ## Task Workflow
 
@@ -88,7 +89,7 @@ All tasks follow a strict lifecycle:
 
 4. **Write Failing Tests (Red Phase):**
    - Create a new test file for the feature or bug fix.
-   - Write one or more unit tests that clearly define the expected behavior and acceptance criteria for the task.
+   - Write unit tests that implement the executable BDD/Gherkin scenarios specified in `spec.md`.
    - **CRITICAL:** Run the tests and confirm that they fail as expected. This is the "Red" phase of TDD. Do not proceed until you have failing tests.
 
 5. **Implement to Pass Tests (Green Phase):**
@@ -99,11 +100,9 @@ All tasks follow a strict lifecycle:
    - With the safety of passing tests, refactor the implementation code and the test code to improve clarity, remove duplication, and enhance performance without changing the external behavior.
    - Rerun tests to ensure they still pass after refactoring.
 
-7. **Verify Coverage:** Run coverage reports using the project's chosen tools. For example, in a Python project, this might look like:
-   ```bash
-   pytest --cov=app --cov-report=html
-   ```
-   Target: >80% coverage for new code. The specific tools and commands will vary by language and framework.
+7. **Verify Coverage and Run Mutation Tests:**
+   - Run coverage reports using the project's chosen tools. Target: >80% coverage for new code.
+   - Run the project's mutation testing suite (e.g. `mutmut`, `stryker`, or `cargo-mutants`) on the modified modules. Target a Mutation Score of `>70%`. If any mutants survive, add tests with stronger assertions to kill them.
 
 9. **Document Deviations:** If implementation differs from tech stack:
    - **STOP** implementation
