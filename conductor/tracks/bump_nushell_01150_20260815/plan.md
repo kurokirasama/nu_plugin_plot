@@ -26,10 +26,10 @@ This plan guides the upgrade of `nu_plugin_plot` to Nushell v0.115.0.
 - [x] Task: Conductor - User Manual Verification 'Breaking Fix Implementation & Source Code Adaptation' (Protocol in workflow.md)
 
 ## Phase 3: Test Suite Updates & Verification (TDD/Red-Green)
-- [ ] Task: Update and execute plugin functional tests
-    - [ ] Check `tests/` suite for compatibility with `nu-plugin-test-support` 0.115.0
-    - [ ] Update any test harnesses or assertions as required by the 0.115.0 engine interface
-    - [ ] Run `cargo test` and verify 100% pass rate
+- [x] Task: Update and execute plugin functional tests
+    - [x] Check `tests/` suite for compatibility with `nu-plugin-test-support` 0.115.0
+    - [x] Update any test harnesses or assertions as required by the 0.115.0 engine interface
+    - [x] Run `cargo test` and verify 100% pass rate
 - [ ] Task: Conductor - User Manual Verification 'Test Suite Updates & Verification' (Protocol in workflow.md)
 
 ## Phase 4: Integration Testing with Nushell 0.115.0
