@@ -10,9 +10,9 @@ This plan guides the upgrade of `nu_plugin_plot` to Nushell v0.115.0.
     - [x] Update `nu-plugin` dependency to `0.115.0`
     - [x] Update `nu-protocol` dependency to `0.115.0` with feature `["plugin"]`
     - [x] Update dev-dependencies `nu-plugin-test-support` and `nu-plugin-engine` to `0.115.0`
-- [ ] Task: Execute clean build and check compiler diagnostics
-    - [ ] Run `cargo clean` to ensure no stale artifacts
-    - [ ] Run `cargo check --release` and capture compiler errors or warnings
+- [x] Task: Execute clean build and check compiler diagnostics
+    - [x] Run `cargo clean` to ensure no stale artifacts
+    - [x] Run `cargo check --release` and capture compiler errors or warnings
 - [ ] Task: Conductor - User Manual Verification 'Cargo.toml Version Updates & Clean Build' (Protocol in workflow.md)
 
 ## Phase 2: Breaking Fix Implementation & Source Code Adaptation
