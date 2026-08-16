@@ -33,12 +33,12 @@ This plan guides the upgrade of `nu_plugin_plot` to Nushell v0.115.0.
 - [x] Task: Conductor - User Manual Verification 'Test Suite Updates & Verification' (Protocol in workflow.md)
 
 ## Phase 4: Integration Testing with Nushell 0.115.0
-- [ ] Task: Register plugin and verify in Nushell runtime
-    - [ ] Register plugin via `plugin add ./target/release/nu_plugin_plot` and `plugin use plot`
-    - [ ] Verify line plotting: `(seq 0 0.1 10 | math sin) | plot`
-    - [ ] Verify histogram plotting: `(seq 1 100 | math random) | hist`
-    - [ ] Verify XY plotting: `[ (seq 0 0.1 10) ((seq 0 0.1 10) | math sin) ] | xyplot`
-    - [ ] Verify edge cases: empty list `[] | plot`, single item `[5] | plot`, negative numbers `[-5 0 5] | plot`
+- [x] Task: Register plugin and verify in Nushell runtime
+    - [x] Register plugin via `plugin add ./target/release/nu_plugin_plot` and `plugin use plot`
+    - [x] Verify line plotting: `(seq 0 0.1 10 | math sin) | plot`
+    - [x] Verify histogram plotting: `(seq 1 100 | math random) | hist`
+    - [x] Verify XY plotting: `[ (seq 0 0.1 10) ((seq 0 0.1 10) | math sin) ] | xyplot`
+    - [x] Verify edge cases: empty list `[] | plot`, single item `[5] | plot`, negative numbers `[-5 0 5] | plot`
 - [ ] Task: Conductor - User Manual Verification 'Integration Testing with Nushell 0.115.0' (Protocol in workflow.md)
 
 ## Phase 5: Documentation & Styleguide Updates
