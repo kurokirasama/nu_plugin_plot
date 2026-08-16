@@ -1,0 +1,3 @@
+Task: Update package and dependency versions in Cargo.toml
+- Bumped nu-plugin, nu-protocol, nu-plugin-test-support, nu-plugin-engine to 0.115.0
+- Updated package version to 0.115.0
