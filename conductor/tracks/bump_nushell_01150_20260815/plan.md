@@ -42,9 +42,9 @@ This plan guides the upgrade of `nu_plugin_plot` to Nushell v0.115.0.
 - [x] Task: Conductor - User Manual Verification 'Integration Testing with Nushell 0.115.0' (Protocol in workflow.md)
 
 ## Phase 5: Documentation & Styleguide Updates
-- [ ] Task: Update project documentation and Conductor tech stack
-    - [ ] Update `conductor/tech-stack.md` with Nushell 0.115.0 versions and minimum Rust version
-    - [ ] Update `README.md` / `GEMINI.md` / `AGENTS.md` version references if applicable
+- [x] Task: Update project documentation and Conductor tech stack
+    - [x] Update `conductor/tech-stack.md` with Nushell 0.115.0 versions and minimum Rust version
+    - [x] Update `README.md` / `GEMINI.md` / `AGENTS.md` version references if applicable
 - [ ] Task: Conductor - User Manual Verification 'Documentation & Styleguide Updates' (Protocol in workflow.md)
 
 ## Phase 6: Remote Push & Repository Cleanup
