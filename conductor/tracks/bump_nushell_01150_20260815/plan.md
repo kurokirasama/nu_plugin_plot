@@ -16,13 +16,13 @@ This plan guides the upgrade of `nu_plugin_plot` to Nushell v0.115.0.
 - [x] Task: Conductor - User Manual Verification 'Cargo.toml Version Updates & Clean Build' (Protocol in workflow.md)
 
 ## Phase 2: Breaking Fix Implementation & Source Code Adaptation
-- [ ] Task: Audit and adapt plugin source code to Nushell 0.115.0 API
-    - [ ] Verify `Plugin` trait implementation in `src/lib.rs` for compatibility
-    - [ ] Verify `SimplePluginCommand` implementations (`CommandPlot`, `CommandHist`, `CommandXyplot`) in `src/lib.rs`
-    - [ ] Verify `serve_plugin` call in `src/main.rs`
-    - [ ] Verify internal color plotting modules in `src/color_plot/`
-- [ ] Task: Build release binary
-    - [ ] Run `cargo build --release` and confirm zero errors
+- [x] Task: Audit and adapt plugin source code to Nushell 0.115.0 API
+    - [x] Verify `Plugin` trait implementation in `src/lib.rs` for compatibility
+    - [x] Verify `SimplePluginCommand` implementations (`CommandPlot`, `CommandHist`, `CommandXyplot`) in `src/lib.rs`
+    - [x] Verify `serve_plugin` call in `src/main.rs`
+    - [x] Verify internal color plotting modules in `src/color_plot/`
+- [x] Task: Build release binary
+    - [x] Run `cargo build --release` and confirm zero errors
 - [ ] Task: Conductor - User Manual Verification 'Breaking Fix Implementation & Source Code Adaptation' (Protocol in workflow.md)
 
 ## Phase 3: Test Suite Updates & Verification (TDD/Red-Green)
