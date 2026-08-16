@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Bump Nushell dependencies to v0.115.0**
+- [~] **Track: Bump Nushell dependencies to v0.115.0**
 *Link: [./tracks/bump_nushell_01150_20260815/](./tracks/bump_nushell_01150_20260815/)*
