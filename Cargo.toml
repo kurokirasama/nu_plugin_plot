@@ -5,14 +5,15 @@ repository = "https://github.com/euphrasiologist/nu_plugin_plot"
 edition = "2021"
 license = "MIT"
 name = "nu_plugin_plot"
-version = "0.115.0"
+version = "0.116.0"
 [dependencies]
-nu-plugin = "0.115.0"
-nu-protocol = { version = "0.115.0", features = ["plugin"] }
+nu-plugin = "0.116.0"
+nu-protocol = { version = "0.116.0", features = ["plugin"] }
 owo-colors = "3.5.0"
 fnv = "1.0.7"
 term_size = "0.3.2"
 
 [dev-dependencies]
-nu-plugin-test-support = "0.115.0"
-nu-plugin-engine = { version = "0.115.0", features = ["local-socket"] }
+nu-plugin-test-support = "0.116.0"
+nu-plugin-engine = { version = "0.116.0", features = ["local-socket"] }
+
