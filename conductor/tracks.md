@@ -7,3 +7,8 @@ This file tracks all major tracks for the project. Each track has its own detail
 - [ ] **Track: Bump Nushell dependencies to v0.115.1**
 *Link: [./tracks/bump_nushell_01151_20260823/](./tracks/bump_nushell_01151_20260823/)*
 
+---
+
+- [ ] **Track: Bump Nushell dependencies to v0.116.0**
+*Link: [./tracks/bump_nushell_01160_20260930/](./tracks/bump_nushell_01160_20260930/)*
+

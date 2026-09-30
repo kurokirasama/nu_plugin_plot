@@ -1,0 +1,8 @@
+{
+  "track_id": "bump_nushell_01160_20260930",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-09-30T15:46:00Z",
+  "updated_at": "2026-09-30T15:46:00Z",
+  "description": "Bump Nushell dependencies to v0.116.0: Cargo.toml updates, breaking fixes, test updates, integration verification"
+}
