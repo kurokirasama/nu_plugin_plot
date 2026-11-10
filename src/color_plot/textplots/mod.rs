@@ -60,7 +60,6 @@ use super::drawille::PixelColor;
 use scale::Scale;
 use std::cmp;
 use std::default::Default;
-use std::f32;
 
 /// How the chart will do the ranging on axes
 #[derive(PartialEq)]

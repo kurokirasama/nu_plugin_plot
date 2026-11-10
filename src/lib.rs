@@ -139,10 +139,10 @@ fn check_chart_shape<'a>(
 fn min_max(series: &[f32]) -> (f32, f32) {
     let min = series
         .iter()
-        .fold(std::f32::MAX, |accu, &x| if x < accu { x } else { accu });
+        .fold(f32::MAX, |accu, &x| if x < accu { x } else { accu });
     let max = series
         .iter()
-        .fold(std::f32::MIN, |accu, &x| if x > accu { x } else { accu });
+        .fold(f32::MIN, |accu, &x| if x > accu { x } else { accu });
     (min, max)
 }
 
